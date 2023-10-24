@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map in JavaScript</title>
+</head>
+<body>
+    <h1 id="showRecord"></h1>
+    <script>
+   const user=[{
+    name:"Sharjeel",
+    email:"sharjeel@gmial.com",
+    phone:"000-3323322333",
+    adress:"wazirabad",
+
+   },
+   {
+    name:"Zaryan",
+    email:"Zaryan@gmial.com",
+    phone:"000-3323322333",
+    adress:"wazirabad",
+
+   },
+   {
+    name:"Ibad",
+    email:"Ibad@gmial.com",
+    phone:"000-3323322333",
+    adress:"wazirabad",
+
+   },
+   {
+    name:"Shertaj",
+    email:"shertaj@gmial.com",
+    phone:"000-3323322333",
+    adress:"wazirabad",
+
+   },
+   
+];
+ const allUser=user?.map((singleUser)=>singleUser.email);
+//  console.log(userRecord);
+ document.getElementById("showRecord").innerHTML=allUser;
+
+    </script>
+</body>
+</html>

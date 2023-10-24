@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEachFunction</title>
+</head>
+<body>
+    <button onclick="getFullName();">Try it</button>
+    <h1 id="show"></h1>
+
+    <script>
+        let persons = [
+            {
+                name: "shertaj",
+                lastname: "khan"
+            },
+            {
+                name: "sheri",
+                lastname: "khani"
+            }
+        ];
+
+        var fullName = [];
+
+        function getFullName() {
+            persons.forEach(function(person) {
+                fullName.push(person.name + " " + person.lastname);
+            });
+            document.getElementById("show").innerHTML = fullName;
+        }
+    </script>
+</body>
+
+</html>
